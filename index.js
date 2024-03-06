@@ -1,15 +1,19 @@
 const express = require("express"); 
 const app = express(); 
-const swaggerUi=require('swagger-ui-express')
-const swaggerFile=require('./swagger_output.json')
-require('./endpoints')(app)
-const mongoose = require('mongoose');
-require('dotenv').config()
+// const swaggerUi=require('swagger-ui-express')
+// const swaggerFile=require('./swagger_output.json')
+// require('./endpoints')(app)
+// const mongoose = require('mongoose');
+// require('dotenv').config()
 
-app.use('/doc',swaggerUi.serve,swaggerUi.setup(swaggerFile))
+// app.use('/doc',swaggerUi.serve,swaggerUi.setup(swaggerFile))
 
 app.get("/", (req, res) => { 
     res.send("Express on Vercel");
+}); 
+
+app.get("/test", (req, res) => { 
+    res.send("Express on test");
 }); 
 
 // console.log(process.env.MONGODB_URI,">>>")
