@@ -1,4 +1,4 @@
-const mongoose = require('mongoose');
+//const mongoose = require('mongoose');
 //const bodyParser=require('body-parser')
 const express=require('express')
 
@@ -17,18 +17,18 @@ module.exports=function(app){
         res.send({name:"kajal",designation:"Node js Developer",department:"Web"})
     })
 
-    app.post('/user',(req,res)=>{
-        console.log(req.body,"req")
-        const username=req.body.name;
-        const age=req.body.age;
-        console.log(username,age)
-        // usermodel.create({name:username,age:age}).then((ans) => { 
-        //     console.log("Document inserted") 
-        //   }).catch((err) => { 
-        //     console.log(err.Message); 
-        //   })
-        res.send("sent!")
-    })
+    // app.post('/user',(req,res)=>{
+    //     console.log(req.body,"req")
+    //     const username=req.body.name;
+    //     const age=req.body.age;
+    //     console.log(username,age)
+    //     // usermodel.create({name:username,age:age}).then((ans) => { 
+    //     //     console.log("Document inserted") 
+    //     //   }).catch((err) => { 
+    //     //     console.log(err.Message); 
+    //     //   })
+    //     res.send("sent!")
+    // })
     
 }
 
