@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 //const bodyParser=require('body-parser')
 const express=require('express')
 
-
+// const usermodel=mongoose.model("users",new mongoose.Schema({name:{type:String},age:{type:Number}}))
 
 module.exports=function(app){
 
@@ -22,14 +22,13 @@ module.exports=function(app){
         const username=req.body.name;
         const age=req.body.age;
         console.log(username,age)
-        usermodel.create({name:username,age:age}).then((ans) => { 
-            console.log("Document inserted") 
-          }).catch((err) => { 
-            console.log(err.Message); 
-          })
+        // usermodel.create({name:username,age:age}).then((ans) => { 
+        //     console.log("Document inserted") 
+        //   }).catch((err) => { 
+        //     console.log(err.Message); 
+        //   })
         res.send("sent!")
     })
     
 }
 
-const usermodel=mongoose.model("users",new mongoose.Schema({name:{type:String},age:{type:Number}}))
