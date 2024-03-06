@@ -12,10 +12,10 @@ app.get("/", (req, res) => {
     res.send("Express on Vercel");
 }); 
 
-console.log(process.env.MONGODB_URI,">>>")
-mongoose.connect(process.env.MONGODB_URI)
-.then(()=>{console.log("mongo connected!")})
-.catch((err)=>{console.error(err)})
+// console.log(process.env.MONGODB_URI,">>>")
+// mongoose.connect(process.env.MONGODB_URI)
+// .then(()=>{console.log("mongo connected!")})
+// .catch((err)=>{console.error(err)})
 
 const PORT = process.env.PORT || 5000; 
 app.listen(PORT, () => { 
