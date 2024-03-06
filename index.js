@@ -4,6 +4,7 @@ const swaggerUi=require('swagger-ui-express')
 const swaggerFile=require('./swagger_output.json')
 require('./endpoints')(app)
 const mongoose = require('mongoose');
+require('dotenv').config()
 
 app.use('/doc',swaggerUi.serve,swaggerUi.setup(swaggerFile))
 
@@ -11,8 +12,8 @@ app.get("/", (req, res) => {
     res.send("Express on Vercel");
 }); 
 
-
-mongoose.connect("mongodb://0.0.0.0:27017/vercel")
+console.log(process.env.MONGODB_URI,">>>")
+mongoose.connect(process.env.MONGODB_URI)
 .then(()=>{console.log("mongo connected!")})
 .catch((err)=>{console.error(err)})
 
