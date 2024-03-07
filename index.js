@@ -10,7 +10,7 @@ const bodyParser=require('body-parser')
 // require('dotenv').config()
 
 // app.use('/doc',swaggerUi.serve,swaggerUi.setup(swaggerFile))
-const MyModel = mongoose.model('MyModel', {}, 'mycollection');
+// const MyModel = mongoose.model('MyModel', {}, 'mycollection');
 
 app.get("/", (req, res) => { 
     res.send("Express on Vercel");
