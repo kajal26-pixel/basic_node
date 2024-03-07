@@ -4,7 +4,7 @@ app.use(express.json())
 // const swaggerUi=require('swagger-ui-express')
 // const swaggerFile=require('./swagger_output.json')
 // require('./endpoints')(app)
-const mongoose = require('mongoose');
+// const mongoose = require('mongoose');
 // require('dotenv').config()
 
 // app.use('/doc',swaggerUi.serve,swaggerUi.setup(swaggerFile))
@@ -32,7 +32,7 @@ app.post('/user',(req,res)=>{
 })
 
 // console.log(process.env.MONGODB_URI,">>>")
-// mongoose.connect(process.env.MONGODB_URI)
+// mongoose.connect("mongodb+srv://user1:user123@cluster0.faucczp.mongodb.net/testing")
 // .then(()=>{console.log("mongo connected!")})
 // .catch((err)=>{console.error(err)})
 
