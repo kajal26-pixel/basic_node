@@ -7,7 +7,7 @@ app.use(express.json())
 // const mongoose = require('mongoose');
 //const mongodb=require("mongodb")
 //import mongoose from "mongoose";
-import * as mongoose from 'mongoose'
+// import * as mongoose from 'mongoose'
 // const mongoose = require("~api/node_modules/mongoose")
 const bodyParser=require('body-parser')
 // require('dotenv').config()
