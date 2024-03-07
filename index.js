@@ -34,9 +34,9 @@ app.post('/user',(req,res)=>{
 })
 
 // console.log(process.env.MONGODB_URI,">>>")
-// mongoose.connect("mongodb+srv://user1:user123@cluster0.faucczp.mongodb.net/testing")
-// .then(()=>{console.log("mongo connected!")})
-// .catch((err)=>{console.error(err)})
+mongoose.connect("mongodb+srv://vercel-admin-user:01LvT7qIUKW7vws0@cluster0.bs22zit.mongodb.net/myFirstDatabase?retryWrites=true&w=majority")
+.then(()=>{console.log("mongo connected!")})
+.catch((err)=>{console.error(err)})
 
 const PORT = process.env.PORT || 5000; 
 app.listen(PORT, () => { 
