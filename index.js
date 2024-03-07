@@ -5,8 +5,8 @@ app.use(express.json())
 // const swaggerFile=require('./swagger_output.json')
 // require('./endpoints')(app)
 // const mongoose = require('mongoose');
-const mongodb=require("mongodb")
-// import mongoose from "mongoose";
+//const mongodb=require("mongodb")
+import mongoose from "mongoose";
 const bodyParser=require('body-parser')
 // require('dotenv').config()
 
