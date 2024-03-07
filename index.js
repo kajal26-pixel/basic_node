@@ -4,9 +4,9 @@ app.use(express.json())
 // const swaggerUi=require('swagger-ui-express')
 // const swaggerFile=require('./swagger_output.json')
 // require('./endpoints')(app)
-const mongoose = require('mongoose');
+// const mongoose = require('mongoose');
 //const mongodb=require("mongodb")
-//import mongoose from "mongoose";
+import mongoose from "mongoose";
 // import * as mongoose from 'mongoose'
 // const mongoose = require("~api/node_modules/mongoose")
 const bodyParser=require('body-parser')
