@@ -5,6 +5,7 @@ app.use(express.json())
 // const swaggerFile=require('./swagger_output.json')
 // require('./endpoints')(app)
 // const mongoose = require('mongoose');
+const bodyParser=require('body-parser')
 // require('dotenv').config()
 
 // app.use('/doc',swaggerUi.serve,swaggerUi.setup(swaggerFile))
