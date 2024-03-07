@@ -4,7 +4,7 @@ app.use(express.json())
 // const swaggerUi=require('swagger-ui-express')
 // const swaggerFile=require('./swagger_output.json')
 // require('./endpoints')(app)
-const mongoose = require('mongoose');
+// const mongoose = require('mongoose');
 // require('dotenv').config()
 
 // app.use('/doc',swaggerUi.serve,swaggerUi.setup(swaggerFile))
