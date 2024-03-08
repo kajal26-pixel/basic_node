@@ -37,7 +37,7 @@ app.post('/user',(req,res)=>{
 })
 
 // console.log(process.env.MONGODB_URI,">>>")
-mongoose.connect("mongodb+srv://user1:user123@cluster0.faucczp.mongodb.net/test")
+await mongoose.connect("mongodb+srv://user1:user123@cluster0.faucczp.mongodb.net/test")
 .then(()=>{console.log("mongo connected!")})
 .catch((err)=>{console.error(err)})
 
